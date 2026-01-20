@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare System - Registro de Consulta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PetCare System</h1>
+        <h2>Registro de Consulta Veterinária</h2>
+        <form action="/consulta" method="post">
+            <label for="pet">Pet:</label>
+            <select id="pet" name="pet" required>
+                <!-- Options will be populated by server -->
+            </select>
+
+            <label for="dataConsulta">Data da Consulta:</label>
+            <input type="date" id="dataConsulta" name="dataConsulta" required>
+
+            <label for="motivo">Motivo:</label>
+            <input type="text" id="motivo" name="motivo" required>
+
+            <label for="observacoes">Observações:</label>
+            <textarea id="observacoes" name="observacoes" rows="4"></textarea>
+
+            <button type="submit">Registrar Consulta</button>
+        </form>
+        <div id="message" class="success" style="display: none;"></div>
+    </div>
+</body>
+</html>

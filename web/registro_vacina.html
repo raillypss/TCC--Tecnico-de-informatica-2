@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare System - Registro de Vacinação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>PetCare System</h1>
+        <h2>Registro de Vacinação</h2>
+        <form action="/vacina" method="post">
+            <label for="pet">Pet:</label>
+            <select id="pet" name="pet" required>
+                <!-- Options will be populated by server -->
+            </select>
+
+            <label for="nomeVacina">Nome da Vacina:</label>
+            <input type="text" id="nomeVacina" name="nomeVacina" required>
+
+            <label for="dataAplicacao">Data da Aplicação:</label>
+            <input type="date" id="dataAplicacao" name="dataAplicacao" required>
+
+            <label for="dataProximaDose">Data da Próxima Dose:</label>
+            <input type="date" id="dataProximaDose" name="dataProximaDose" required>
+
+            <button type="submit">Registrar</button>
+        </form>
+        <div id="message" class="success" style="display: none;"></div>
+        <a href="dashboard.html">Voltar ao Dashboard</a>
+    </div>
+</body>
+</html>
